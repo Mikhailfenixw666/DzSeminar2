@@ -2,3 +2,20 @@
 // 6 -> да
 // 7 -> да
 // 1 -> нет
+Console.WriteLine("Введите день недели от 1 до 7: ");
+int Day = Convert.ToInt32(Console.ReadLine());
+if (Day >= 1 && Day <= 7)
+{
+  if (Day >= 6)
+  {
+    Console.Write("Это выходной день");
+  }
+  else
+  {
+    Console.Write("Рабочий день");
+  }
+}
+else
+{
+  Console.Write("Дней недели не больше 7");
+}
